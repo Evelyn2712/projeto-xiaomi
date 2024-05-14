@@ -1,0 +1,131 @@
+.Header {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #bebebe;
+  background-color: #ffffff;
+  font-family: "Inter";
+  z-index: 3;
+}
+
+.headerWrapper {
+  max-width: var(--tamanho-maximo);
+  margin: 0 auto;
+  padding: 12px 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 8px 8px 12px #e6e6e6;
+  border-radius: 5px;
+}
+
+.logoA{
+
+}
+
+.ulWrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.navLi .linksMenuLi {
+  font-size: 15px;
+  font-weight: 500;
+  color: #030303;
+}
+
+.ulWrapper .navLi .linksMenuLi:hover {
+  color: #e46e01;
+  transition: .2s ease-in;
+}
+
+.navMenu .ulWrapper .navLi{
+  position: relative;
+}
+
+.navMenu .ulWrapper .navLi::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  background: var(--color-red);
+  left: 0;
+  bottom: -10px;
+  transition: .5s ease-in-out;
+}
+
+.navMenu .ulWrapper .navLi:hover::after{
+  width: 100%;
+  transition: .5s ease-in;
+}
+
+.ulWrapper .buyButton {
+  background-color: #e46e01;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.ulWrapper .buyButton:hover {
+  color: #555454;
+  background: #e46e01;
+  transition: .4s;
+}
+
+#buttonMobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  /* / Menu mobile */
+
+  .headerWrapper{
+    justify-content: space-between;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  #menuIcons {
+    width: 20px;
+    height: 20px;
+  }
+
+  #buttonMobile {
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+  }
+
+  .active .navMenu {
+    padding-top: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .ulWrappe .navLi {
+    padding: 1rem;
+  }
+  .active .ulWrapper {
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+  /* // Menu mobile */
+}

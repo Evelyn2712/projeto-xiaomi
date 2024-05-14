@@ -1,0 +1,76 @@
+.produtos{  
+  font-family: "Inter";
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+}
+
+
+.produto{
+  height: 450px;
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 10px 10px 15px #bebebe;
+  border-radius: 5px;
+}
+
+
+.img1{
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 60px;
+}
+
+.img2{
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.img3{
+  margin: 0 auto;
+  padding-top: 6px;
+  width: 230px;
+}
+
+.text1{
+  color: #696969;
+  padding-top: 50px;
+}
+
+.textinho{
+  color: #868686;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 10px;
+}
+
+
+.buttons{
+  color: #fff;
+  padding: 7px 10px;
+  font-size: 13px;
+  background-color: #e46e01;
+  border-color: #e46e01;
+  border-radius: 5px;
+}
+
+.buttons:hover{
+  transition-timing-function: linear;
+  color: #3d3d3d;
+  transition: .3s;
+}
+
+
+@media (max-width: 600px) {
+
+  .produtos{
+    padding: 15px;
+  }
+}

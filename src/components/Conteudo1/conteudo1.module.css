@@ -1,0 +1,37 @@
+.Conteudo1{
+  z-index: 3;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
+  font-family: "Inter";
+}
+.main1Wrapper{
+  padding-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#p1{
+  padding: 5px;
+  color: #868686;
+}
+
+.text1{
+  margin: 0px 90px;
+  color: #696969;
+}
+
+
+.imagem1{
+  padding: 30px;
+}
+
+@media (max-width: 600px) {
+.main1Wrapper{
+  grid-template-columns: 1fr;
+  padding-top: 120px;
+}
+
+}
